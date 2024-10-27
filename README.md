@@ -102,126 +102,127 @@
 ## Konfigurasi IP:
 
 1. Paradis
-auto eth0
-iface eth0 inet dhcp
 
-auto eth1
-iface eth1 inet static
-	address 192.237.1.1
-	netmask 255.255.255.0
+       auto eth0
+       iface eth0 inet dhcp
 
-auto eth2
-iface eth2 inet static
-	address 192.237.2.1
-	netmask 255.255.255.0
+       auto eth1
+       iface eth1 inet static
+       address 192.237.1.1
+       netmask 255.255.255.0
 
-auto eth3
-iface eth3 inet static
-	address 192.237.3.1
-	netmask 255.255.255.0
+       auto eth2
+       iface eth2 inet static
+       address 192.237.2.1
+       netmask 255.255.255.0
 
-auto eth4
-iface eth4 inet static
-	address 192.237.4.1
-	netmask 255.255.255.0
+       auto eth3
+       iface eth3 inet static
+       address 192.237.3.1
+       netmask 255.255.255.0
+
+       auto eth4
+       iface eth4 inet static
+       address 192.237.4.1
+       netmask 255.255.255.0
  
-2. Tybur
+3. Tybur
 
-auto eth0
-iface eth0 inet static
-	address 192.237.4.2
-	netmask 255.255.255.0
-	gateway 192.237.4.1
+       auto eth0
+       iface eth0 inet static
+          address 192.237.4.2
+          netmask 255.255.255.0
+          gateway 192.237.4.1
  
-3. Fritz
+4. Fritz
 
-auto eth0
-iface eth0 inet static
-	address 192.237.4.3
-	netmask 255.255.255.0
-	gateway 192.237.4.1
+       auto eth0
+       iface eth0 inet static
+	   address 192.237.4.3
+	   netmask 255.255.255.0
+	   gateway 192.237.4.1
 
 4. Warhammer
 
-auto eth0
-iface eth0 inet static
-	address 192.237.3.4
-	netmask 255.237.255.0
-	gateway 192.237.3.1
+       auto eth0
+       iface eth0 inet static
+	   address 192.237.3.4
+	   netmask 255.237.255.0
+	   gateway 192.237.3.1
 
 5. Beast
 
-auto eth0
-iface eth0 inet static
-	address 192.237.3.2
-	netmask 255.237.255.0
-	gateway 192.237.3.1
+       auto eth0
+       iface eth0 inet static
+	   address 192.237.3.2
+	   netmask 255.237.255.0
+	   gateway 192.237.3.1
 
 6. Colossal
 
-auto eth0
-iface eth0 inet static
-	address 192.237.3.3
-	netmask 255.237.255.0
-	gateway 192.237.3.1
+       auto eth0
+       iface eth0 inet static
+	   address 192.237.3.3
+	   netmask 255.237.255.0
+	   gateway 192.237.3.1
 
 7. Annie
 
-auto eth0
-iface eth0 inet static
-	address 19.237.1.2
-	netmask 255.255.255.0
-	gateway 192.237.1.1
+       auto eth0
+       iface eth0 inet static
+	   address 19.237.1.2
+	   netmask 255.255.255.0
+	   gateway 192.237.1.1
 
 8. Bertholdt
 
-auto eth0
-iface eth0 inet static
-	address 19.237.1.3
-	netmask 255.255.255.0
-	gateway 192.237.1.1
+       auto eth0
+       iface eth0 inet static
+	   address 19.237.1.3
+	   netmask 255.255.255.0
+	   gateway 192.237.1.1
 
 9. Reiner
 
-auto eth0
-iface eth0 inet static
-	address 19.237.1.4
-	netmask 255.255.255.0
-	gateway 192.237.1.1
+       auto eth0
+       iface eth0 inet static
+	   address 19.237.1.4
+	   netmask 255.255.255.0
+	   gateway 192.237.1.1
 
 10. Armin
 
-auto eth0
-iface eth0 inet static
-	address 192.237.2.4
-	netmask 255.255.255.0
-	gateway 192.237.2.1
+        auto eth0
+        iface eth0 inet static
+	    address 192.237.2.4
+	    netmask 255.255.255.0
+	    gateway 192.237.2.1
 
 11. Eren
 
-auto eth0
-iface eth0 inet static
-	address 192.237.2.3
-	netmask 255.255.255.0
-	gateway 192.237.2.1
+        auto eth0
+        iface eth0 inet static
+	    address 192.237.2.3
+	    netmask 255.255.255.0
+	    gateway 192.237.2.1
 
 12. Mikasa
 
-auto eth0
-iface eth0 inet static
-	address 192.237.2.2
-	netmask 255.255.255.0
-	gateway 192.237.2.1
+        auto eth0
+        iface eth0 inet static
+	    address 192.237.2.2
+	    netmask 255.255.255.0
+	    gateway 192.237.2.1
  
 13. Zeke
 
-auto eth0
-iface eth0 inet dhcp
+        auto eth0
+        iface eth0 inet dhcp
 
 14. Erwin
 
-auto eth0
-iface eth0 inet dhcp
+        auto eth0
+        iface eth0 inet dhcp
 
 
 ## Setup Node
@@ -231,3 +232,8 @@ DHCP Relay (Paradis)
     iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE -s 192.246.0.0/16
     apt-get update
     apt install isc-dhcp-relay -y
+
+## Kendala
+
+(SS kendala)
+![image](https://github.com/user-attachments/assets/42f92dbd-69af-4868-b2cb-723ab47ec512)
